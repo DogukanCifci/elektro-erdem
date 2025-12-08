@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ElektroErdem - Professional Electrical Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Outfit', 'sans-serif'],
+              arabic: ['Cairo', 'sans-serif'],
+            },
+            animation: {
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            colors: {
+              primary: {
+                50: '#eff6ff',
+                100: '#dbeafe',
+                200: '#bfdbfe',
+                300: '#93c5fd',
+                400: '#60a5fa',
+                500: '#3b82f6',
+                600: '#2563eb',
+                700: '#1d4ed8',
+                800: '#1e40af',
+                900: '#1e3a8a',
+                950: '#172554',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Outfit', sans-serif;
+        overflow-x: hidden;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f5f9;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #3b82f6;
+        border-radius: 5px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #2563eb;
+      }
+      
+      .custom-scrollbar::-webkit-scrollbar {
+        height: 8px;
+        width: 8px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #94a3b8;
+        border-radius: 4px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #64748b;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@react-three/drei": "https://aistudiocdn.com/@react-three/drei@^10.7.7",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "@react-three/fiber": "https://aistudiocdn.com/@react-three/fiber@^9.4.0",
+    "three": "https://aistudiocdn.com/three@^0.181.2",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
