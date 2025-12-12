@@ -108,8 +108,6 @@ export const projects: ProjectItem[] = [
       "https://www.ravaluxaydinlatma.com/wp-content/uploads/2021/08/anasayfa.jpg",
     gallery: [
       "https://www.ravaluxaydinlatma.com/wp-content/uploads/2021/08/anasayfa.jpg",
-      "https://picsum.photos/id/364/800/600",
-      "https://picsum.photos/id/164/800/600",
     ],
     completionDate: {
       tr: "Haziran 2023",
@@ -403,7 +401,7 @@ export const projects: ProjectItem[] = [
 export const testimonials: TestimonialItem[] = [
   {
     id: 1,
-    name: "Thomas Müller",
+    name: "Umutcan Gün",
     role: {
       tr: "Villa Sahibi",
       de: "Hausbesitzer",
@@ -420,7 +418,7 @@ export const testimonials: TestimonialItem[] = [
   },
   {
     id: 2,
-    name: "Sarah Weber",
+    name: "Dogukan Cifci",
     role: {
       tr: "İşletme Müdürü",
       de: "Betriebsleiterin",
