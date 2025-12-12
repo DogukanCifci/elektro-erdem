@@ -349,12 +349,8 @@ export const projects: ProjectItem[] = [
       en: "A well-balanced lighting concept was implemented for the restaurant, combining atmosphere and functionality. Warm lighting and carefully selected fixtures create a comfortable and inviting dining experience. The table areas are divided into individually controllable lighting zones, allowing flexible adjustment for different situations. High-performance task lighting in the kitchen ensures optimal visibility and efficient working conditions.",
       ar: "تم استخدام مصابيح بفتيل دافئة اللون وثريات مصممة خصيصًا لتناسب جو المكان. تم إعداد نظام مناطق قابل للتحكم بشكل منفصل لكل مجموعة طاولات. تم اختيار مصابيح عمل عالية اللومن لمنطقة المطبخ.",
     },
-    thumbnailUrl:
-      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx4IgocH-i4R-cTP59TxsnJ5lp8wzqeAfXjzBbQndjbZG4XqINz-z2cbSj5HL7auJZOK-szUKs_KYG-rE84JY6ZZuShskPEu-bv9T99iDKCrtVDlU8dls6O0wCaI5CZKq-Ea-5a=s1360-w1360-h1020-rw",
-    gallery: [
-      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx4IgocH-i4R-cTP59TxsnJ5lp8wzqeAfXjzBbQndjbZG4XqINz-z2cbSj5HL7auJZOK-szUKs_KYG-rE84JY6ZZuShskPEu-bv9T99iDKCrtVDlU8dls6O0wCaI5CZKq-Ea-5a=s1360-w1360-h1020-rw",
-      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz9SCA1DLE5AsDyWewimXBjDv9ABMfKvOE1sV6lQY3G_Ur7xeAMmvj1nOazvslIwcEY6YK0dgfz7hQRXYYoqP5hhh7BaZaP-khC3ytYhX8UOfcqRYS3-Tkyo7z5FZ5Y_5C2Oy_D4rDblqgN=s1360-w1360-h1020-rw",
-    ],
+    thumbnailUrl: "../assets/chicken-story1.jpeg",
+    gallery: ["../assets/chicken-story1.jpeg", "../assets/chicken-story2.png"],
     completionDate: {
       tr: "Mart 2024",
       de: "März 2024",
