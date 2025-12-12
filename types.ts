@@ -1,6 +1,6 @@
-import { LucideIcon } from 'lucide-react';
+import { LucideIcon } from "lucide-react";
 
-export type Language = 'tr' | 'de' | 'en' | 'ar';
+export type Language = "tr" | "de" | "en" | "ar";
 
 export interface LocalizedString {
   tr: string;
@@ -19,7 +19,7 @@ export interface ServiceItem {
 export interface ProjectItem {
   id: number;
   title: LocalizedString;
-  category: 'residential' | 'commercial' | 'industrial' | 'automation';
+  category: "residential" | "commercial" | "installation" | "automation";
   categoryLabel: LocalizedString;
   thumbnailUrl: string;
   gallery: string[];

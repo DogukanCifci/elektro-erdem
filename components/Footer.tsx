@@ -44,7 +44,7 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
             <p className="text-slate-400 text-sm leading-relaxed">
               {t.footer.aboutDesc[lang]}
             </p>
-            <div className="flex space-x-4 rtl:space-x-reverse">
+            {/* <div className="flex space-x-4 rtl:space-x-reverse">
               {[Facebook, Instagram, Linkedin, Twitter].map((Icon, i) => (
                 <a
                   key={i}
@@ -54,7 +54,7 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
                   <Icon size={18} />
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}
@@ -123,7 +123,7 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
               <li className="flex items-start space-x-3 rtl:space-x-reverse">
                 <MapPin className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
                 <span className="text-slate-400">
-                  Königstraße 123, 70173
+                  Brigachstr. 14, 70376
                   <br />
                   Stuttgart, Germany
                 </span>
@@ -131,12 +131,12 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
               <li className="flex items-center space-x-3 rtl:space-x-reverse">
                 <Phone className="w-5 h-5 text-blue-500 flex-shrink-0" />
                 <span className="text-slate-400 font-mono" dir="ltr">
-                  +49 157 000 0000
+                  +49 176 210 25291
                 </span>
               </li>
               <li className="flex items-center space-x-3 rtl:space-x-reverse">
                 <Mail className="w-5 h-5 text-blue-500 flex-shrink-0" />
-                <span className="text-slate-400">info@elektropro.de</span>
+                <span className="text-slate-400">info@elektroerdem.de</span>
               </li>
             </ul>
           </div>

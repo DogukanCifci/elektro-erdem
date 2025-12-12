@@ -93,8 +93,8 @@ export const t: any = {
   hero: {
     badge: {
       tr: "Usta Elektrikçi & Mühendislik",
-      de: "Meisterbetrieb & Engineering",
-      en: "Master Electrician & Engineering",
+      de: "Wilkommen bei Elektro Erdem",
+      en: "Welcome to Elektro Erdem",
       ar: "كهربائي رئيسي وهندسة",
     },
     title: {
@@ -110,15 +110,15 @@ export const t: any = {
       ar: "كهربائية",
     },
     titleEnd: {
-      tr: "Ve Mühendislik",
+      tr: "Stuttgart'ta",
       de: "in Stuttgart",
-      en: "& Engineering",
+      en: "in Stuttgart",
       ar: "احترافية في شتوتغارت",
     },
     desc: {
       tr: "Bireysel ve kurumsal projeleriniz için sertifikalı elektrik tesisatı, akıllı ev sistemleri ve arıza bakım hizmetleri.",
-      de: "Zertifizierte Elektroinstallationen, Smart-Home-Systeme und Wartungsdienste für Ihre privaten und gewerblichen Projekte.",
-      en: "Certified electrical installations, smart home systems, and maintenance services for your residential and commercial projects.",
+      de: "Für Privatkunden, Gewerbe und Industrie bieten wir maßgeschneiderte Lösungen rund um E-Mobilität, moderne Elektroinstallationen, Smart-Home-Systeme und Elektrokontrollen. Elektro Erdem steht für Qualität, Präzision und Vertrauen.",
+      en: "For private customers, commercial businesses, and industry, we provide tailor-made solutions in the areas of e-mobility, modern electrical installations, smart home systems, and electrical inspections. Elektro Erdem stands for quality, precision, and trust.",
       ar: "تركيبات كهربائية معتمدة، أنظمة المنازل الذكية، وخدمات الصيانة لمشاريعك السكنية والتجارية.",
     },
     ctaProject: {
@@ -266,8 +266,8 @@ export const t: any = {
     filterCom: { tr: "Ticari", de: "Gewerbe", en: "Commercial", ar: "تجاري" },
     filterInd: {
       tr: "Endüstri",
-      de: "Industrie",
-      en: "Industrial",
+      de: "Installation",
+      en: "Installation",
       ar: "صناعي",
     },
     filterAuto: {
@@ -320,10 +320,10 @@ export const t: any = {
       ar: "عنوان المكتب",
     },
     address: {
-      tr: "Königstraße 123, 70173 Stuttgart",
-      de: "Königstraße 123, 70173 Stuttgart",
-      en: "Königstraße 123, 70173 Stuttgart",
-      ar: "Königstraße 123, 70173 شتوتغارت",
+      tr: "Brigachstr. 14, 70376 Stuttgart",
+      de: "Brigachstr. 14, 70376 Stuttgart",
+      en: "Brigachstr. 14, 70376 Stuttgart",
+      ar: "Brigachstr. 14, 70376 شتوتغارت",
     },
     phoneTitle: {
       tr: "Telefon & WhatsApp",
@@ -442,8 +442,8 @@ export const t: any = {
     },
     aboutDesc: {
       tr: "Stuttgart bölgesinde 10+ yıldır güvenilir elektrik hizmetleri sunan, uzman kadrosuyla müşteri memnuniyetini ön planda tutan lider elektrik firması.",
-      de: "Ein führendes Elektrounternehmen, das seit über 10 Jahren zuverlässige Elektroservices in der Region Stuttgart anbietet und die Kundenzufriedenheit mit seinem Expertenteam priorisiert.",
-      en: "A leading electrical company providing reliable services in the Stuttgart region for over 10 years, prioritizing customer satisfaction with expert staff.",
+      de: "Ein führendes Elektrounternehmen in der Region Stuttgart, das für zuverlässige Dienstleistungen steht und Kundenzufriedenheit durch qualifiziertes Fachpersonal in den Mittelpunkt stellt.",
+      en: "A leading electrical company in the Stuttgart region, delivering reliable services with a strong focus on customer satisfaction and skilled professionals.",
       ar: "شركة كهرباء رائدة تقدم خدمات موثوقة في منطقة شتوتغارت لأكثر من 10 سنوات، مع إعطاء الأولوية لرضا العملاء بفضل فريق من الخبراء.",
     },
     services: {

@@ -93,7 +93,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
                     className="text-slate-700 text-xl font-mono mt-1"
                     dir="ltr"
                   >
-                    +49 157 000 0000
+                    +49 176 210 25291
                   </p>
                   <p className="text-slate-500 text-sm">
                     {t.contact.phoneDesc[lang]}
@@ -109,7 +109,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
                   <h4 className="text-slate-900 font-bold text-lg">
                     {t.contact.emailTitle[lang]}
                   </h4>
-                  <p className="text-slate-600">info@elektropro.de</p>
+                  <p className="text-slate-600">info@elektroerdem.de</p>
                 </div>
               </div>
             </div>
@@ -119,7 +119,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
               <div className="absolute inset-0 bg-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-10"></div>
               <iframe
                 title="Google Maps Stuttgart"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42049.25619149486!2d9.146607218388523!3d48.7758459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799db34c5d511a5%3A0x41ffd3c8d093330!2sStuttgart%2C%20Germany!5e0!3m2!1sen!2str!4v1629827361234!5m2!1sen!2str"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.8773150509423!2d9.217161694869322!3d48.822402229314214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799c542969635c3%3A0xfd67c13d48956868!2sBrigachstra%C3%9Fe%2014%2C%2070376%20Stuttgart!5e0!3m2!1str!2sde!4v1765566974316!5m2!1str!2sde"
                 width="100%"
                 height="100%"
                 style={{ border: 0, filter: "grayscale(100%)" }}
