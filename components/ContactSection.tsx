@@ -89,12 +89,12 @@ const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
                   <h4 className="text-slate-900 font-bold text-lg">
                     {t.contact.phoneTitle[lang]}
                   </h4>
-                  <p
-                    className="text-slate-700 text-xl font-mono mt-1"
-                    dir="ltr"
+                  <a
+                    href="tel:+4917621025291"
+                    className="text-slate-700 text-lg font-mono mt-1"
                   >
                     +49 176 210 25291
-                  </p>
+                  </a>
                   <p className="text-slate-500 text-sm">
                     {t.contact.phoneDesc[lang]}
                   </p>
@@ -109,7 +109,12 @@ const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
                   <h4 className="text-slate-900 font-bold text-lg">
                     {t.contact.emailTitle[lang]}
                   </h4>
-                  <p className="text-slate-600">info@elektroerdem.de</p>
+                  <a
+                    href="mailto:info@elektroerdem.de"
+                    className="text-slate-600"
+                  >
+                    info@elektroerdem.de
+                  </a>
                 </div>
               </div>
             </div>
