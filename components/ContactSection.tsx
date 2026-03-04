@@ -303,6 +303,18 @@ const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
                 <span>
                   {t.contact.form.privacyLine1[lang]}{" "}
                   {t.contact.form.privacyLine2[lang]}
+                  {" "}
+                  <button
+                    type="button"
+                    onClick={() =>
+                      window.dispatchEvent(
+                        new CustomEvent("open-legal", { detail: "privacy" }),
+                      )
+                    }
+                    className="text-blue-700 underline hover:text-blue-800"
+                  >
+                    {t.footer.privacy[lang]}
+                  </button>
                 </span>
               </label>
 

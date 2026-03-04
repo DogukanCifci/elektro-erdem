@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Zap,
   Facebook,
@@ -23,6 +23,19 @@ const Footer: React.FC<FooterProps> = ({ lang, onOpenProject }) => {
   const [activeLegal, setActiveLegal] = useState<
     "impressum" | "privacy" | null
   >(null);
+
+  useEffect(() => {
+    const handleOpenLegal = (event: Event) => {
+      const customEvent = event as CustomEvent<"impressum" | "privacy">;
+      if (customEvent.detail === "impressum" || customEvent.detail === "privacy") {
+        setActiveLegal(customEvent.detail);
+      }
+    };
+
+    window.addEventListener("open-legal", handleOpenLegal as EventListener);
+    return () =>
+      window.removeEventListener("open-legal", handleOpenLegal as EventListener);
+  }, []);
 
   return (
     <>
