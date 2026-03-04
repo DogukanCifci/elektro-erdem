@@ -118,13 +118,22 @@ const Footer: React.FC<FooterProps> = ({ lang, onOpenProject }) => {
               </li>
               <li className="flex items-center space-x-3 rtl:space-x-reverse">
                 <Phone className="w-5 h-5 text-blue-500 flex-shrink-0" />
-                <span className="text-slate-400 font-mono" dir="ltr">
+                <a
+                  href="tel:+4917621025291"
+                  className="text-slate-400 hover:text-blue-500 transition-colors font-mono"
+                  dir="ltr"
+                >
                   +49 176 210 25291
-                </span>
+                </a>
               </li>
               <li className="flex items-center space-x-3 rtl:space-x-reverse">
                 <Mail className="w-5 h-5 text-blue-500 flex-shrink-0" />
-                <span className="text-slate-400">info@elektroerdem.de</span>
+                <a
+                  href="mailto:info@elektroerdem.de"
+                  className="text-slate-400 hover:text-blue-500 transition-colors"
+                >
+                  info@elektroerdem.de
+                </a>
               </li>
             </ul>
           </div>
