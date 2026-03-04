@@ -18,15 +18,9 @@ function App() {
     null
   );
 
-  // Handle RTL for Arabic
   useEffect(() => {
-    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+    document.documentElement.dir = "ltr";
     document.documentElement.lang = lang;
-    if (lang === "ar") {
-      document.body.classList.add("font-arabic");
-    } else {
-      document.body.classList.remove("font-arabic");
-    }
   }, [lang]);
 
   return (

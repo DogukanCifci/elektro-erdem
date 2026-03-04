@@ -132,10 +132,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({
 
                     {/* Click indicator */}
                     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-blue-600 text-white rounded-full p-4 shadow-lg scale-50 group-hover:scale-100">
-                      <ArrowRight
-                        size={24}
-                        className={lang === "ar" ? "rotate-180" : ""}
-                      />
+                      <ArrowRight size={24} />
                     </div>
                   </div>
 

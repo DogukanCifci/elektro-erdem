@@ -19,8 +19,6 @@ interface FooterProps {
 }
 
 const Footer: React.FC<FooterProps> = ({ lang }) => {
-  const isRTL = lang === "ar";
-
   return (
     <footer className="bg-slate-900 text-slate-300 pt-20 pb-10 border-t border-slate-800 relative overflow-hidden">
       {/* Decorative elements */}
@@ -71,12 +69,7 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
                       href={`#${link}`}
                       className="text-slate-400 hover:text-blue-500 transition-colors flex items-center text-sm capitalize"
                     >
-                      <ChevronRight
-                        size={14}
-                        className={`mr-1 text-slate-600 ${
-                          isRTL ? "rotate-180 ml-1 mr-0" : ""
-                        }`}
-                      />
+                      <ChevronRight size={14} className="mr-1 text-slate-600" />
                       {/* @ts-ignore */}
                       {t[link === "home" ? "hero" : link]?.title?.[lang] ||
                         t.footer.contact[lang]}
@@ -102,9 +95,7 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
                   >
                     <ChevronRight
                       size={14}
-                      className={`mr-1 text-slate-600 ${
-                        isRTL ? "rotate-180 ml-1 mr-0" : ""
-                      }`}
+                      className="mr-1 text-slate-600"
                     />
                     {service.title[lang]}
                   </a>

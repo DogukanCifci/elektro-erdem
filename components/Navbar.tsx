@@ -46,14 +46,6 @@ const Navbar: React.FC<NavbarProps> = ({ lang, setLang }) => {
       contact: "Contact",
       call: "Call Now",
     },
-    ar: {
-      home: "الرئيسية",
-      services: "الخدمات",
-      projects: "المشاريع",
-      testimonials: "المراجع",
-      contact: "اتصل بنا",
-      call: "اتصل الآن",
-    },
   };
 
   const navLinks = [
@@ -67,8 +59,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, setLang }) => {
   const languages: { code: Language; label: string }[] = [
     { code: "de", label: "Deutsch" },
     { code: "en", label: "English" },
-    // { code: "tr", label: "Türkçe" },
-    // { code: 'ar', label: 'العربية' },
+    { code: "tr", label: "Türkçe" },
   ];
 
   return (
@@ -165,7 +156,11 @@ const Navbar: React.FC<NavbarProps> = ({ lang, setLang }) => {
         {/* Mobile Menu Button */}
         <div className="flex items-center space-x-4 md:hidden rtl:space-x-reverse">
           <button
-            onClick={() => setLang(lang === "en" ? "de" : "en")}
+            onClick={() =>
+              setLang(
+                lang === "de" ? "en" : lang === "en" ? "tr" : "de"
+              )
+            }
             className="border rounded-md px-2 py-1 text-slate-800 border-slate-300"
           >
             <span className="text-xs font-bold uppercase">{lang}</span>

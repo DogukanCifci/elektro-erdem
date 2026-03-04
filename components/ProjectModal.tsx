@@ -24,7 +24,6 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
   lang,
 }) => {
   const [galleryIndex, setGalleryIndex] = useState(0);
-  const isRTL = lang === "ar";
 
   const nextImage = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -75,25 +74,15 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
               <>
                 <button
                   onClick={prevImage}
-                  className={`absolute ${
-                    isRTL ? "right-4" : "left-4"
-                  } top-1/2 -translate-y-1/2 bg-black/50 hover:bg-blue-600 text-white p-3 rounded-full transition-all z-20 backdrop-blur-sm border border-white/20 hover:border-blue-500 opacity-0 group-hover:opacity-100`}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-blue-600 text-white p-3 rounded-full transition-all z-20 backdrop-blur-sm border border-white/20 hover:border-blue-500 opacity-0 group-hover:opacity-100"
                 >
-                  <ChevronLeft
-                    size={24}
-                    className={isRTL ? "rotate-180" : ""}
-                  />
+                  <ChevronLeft size={24} />
                 </button>
                 <button
                   onClick={nextImage}
-                  className={`absolute ${
-                    isRTL ? "left-4" : "right-4"
-                  } top-1/2 -translate-y-1/2 bg-black/50 hover:bg-blue-600 text-white p-3 rounded-full transition-all z-20 backdrop-blur-sm border border-white/20 hover:border-blue-500 opacity-0 group-hover:opacity-100`}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-blue-600 text-white p-3 rounded-full transition-all z-20 backdrop-blur-sm border border-white/20 hover:border-blue-500 opacity-0 group-hover:opacity-100"
                 >
-                  <ChevronRight
-                    size={24}
-                    className={isRTL ? "rotate-180" : ""}
-                  />
+                  <ChevronRight size={24} />
                 </button>
               </>
             )}
