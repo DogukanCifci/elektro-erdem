@@ -357,7 +357,7 @@ export const projects: ProjectItem[] = [
 export const testimonials: TestimonialItem[] = [
   {
     id: 1,
-    name: "Umutcan Gün",
+    name: "Mehmet Öztürk",
     role: {
       tr: "Villa Sahibi",
       de: "Hausbesitzer",
@@ -372,7 +372,7 @@ export const testimonials: TestimonialItem[] = [
   },
   {
     id: 2,
-    name: "Dogukan Cifci",
+    name: "Ahmet Tezcan",
     role: {
       tr: "İşletme Müdürü",
       de: "Betriebsleiterin",

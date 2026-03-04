@@ -59,7 +59,10 @@ function App() {
         </main>
 
         {/* Footer */}
-        <Footer lang={lang} />
+        <Footer
+          lang={lang}
+          onOpenProject={(project) => setSelectedProject(project)}
+        />
       </div>
     </div>
   );

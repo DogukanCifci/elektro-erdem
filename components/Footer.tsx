@@ -10,15 +10,16 @@ import {
   Phone,
   Mail,
 } from "lucide-react";
-import { Language } from "../types";
+import { Language, ProjectItem } from "../types";
 import { t } from "../data/translations";
-import { services } from "../data/content";
+import { services, projects } from "../data/content";
 
 interface FooterProps {
   lang: Language;
+  onOpenProject: (project: ProjectItem) => void;
 }
 
-const Footer: React.FC<FooterProps> = ({ lang }) => {
+const Footer: React.FC<FooterProps> = ({ lang, onOpenProject }) => {
   return (
     <footer className="bg-slate-900 text-slate-300 pt-20 pb-10 border-t border-slate-800 relative overflow-hidden">
       {/* Decorative elements */}
@@ -62,21 +63,17 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
               {t.footer.links[lang]}
             </h4>
             <ul className="space-y-3">
-              {["home", "services", "projects", "testimonials", "contact"].map(
-                (link) => (
-                  <li key={link}>
-                    <a
-                      href={`#${link}`}
-                      className="text-slate-400 hover:text-blue-500 transition-colors flex items-center text-sm capitalize"
-                    >
-                      <ChevronRight size={14} className="mr-1 text-slate-600" />
-                      {/* @ts-ignore */}
-                      {t[link === "home" ? "hero" : link]?.title?.[lang] ||
-                        t.footer.contact[lang]}
-                    </a>
-                  </li>
-                ),
-              )}
+              {projects.map((project) => (
+                <li key={project.id}>
+                  <button
+                    onClick={() => onOpenProject(project)}
+                    className="text-slate-400 hover:text-blue-500 transition-colors flex items-center text-sm text-left w-full"
+                  >
+                    <ChevronRight size={14} className="mr-1 text-slate-600" />
+                    {project.title[lang]}
+                  </button>
+                </li>
+              ))}
             </ul>
           </div>
 

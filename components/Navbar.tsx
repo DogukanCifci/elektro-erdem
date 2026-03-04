@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Zap, Menu, X, Phone, Globe } from "lucide-react";
+import { Menu, X, Phone, Globe } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Language } from "../types";
 
