@@ -10,7 +10,7 @@ interface ContactSectionProps {
 
 const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
   const [formStatus, setFormStatus] = useState<"idle" | "sending" | "success">(
-    "idle"
+    "idle",
   );
   const [privacyAccepted, setPrivacyAccepted] = useState(false);
 
@@ -95,7 +95,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
                     href="tel:+4917621025291"
                     className="text-slate-700 text-lg font-mono mt-1"
                   >
-                    +49 176 210 25291
+                    +49 176 210 252 91
                   </a>
                   <p className="text-slate-500 text-sm">
                     {t.contact.phoneDesc[lang]}
@@ -301,8 +301,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
                   className="mt-1 h-4 w-4 rounded border-slate-300 text-blue-600 focus:ring-blue-600"
                 />
                 <span>
-                  {t.contact.form.privacyLine1[lang]}
-                  {" "}
+                  {t.contact.form.privacyLine1[lang]}{" "}
                   {t.contact.form.privacyLine2[lang]}
                 </span>
               </label>

@@ -85,6 +85,9 @@ interface Translations {
       aboutDesc: LocalizedString;
       services: LocalizedString;
       links: LocalizedString;
+      legal: LocalizedString;
+      impressum: LocalizedString;
+      privacy: LocalizedString;
       contact: LocalizedString;
       rights: LocalizedString;
     };
@@ -413,6 +416,21 @@ export const t: any = {
       tr: "Hızlı Bağlantılar",
       de: "Quick Links",
       en: "Quick Links",
+    },
+    legal: {
+      tr: "Yasal",
+      de: "Rechtliches",
+      en: "Legal",
+    },
+    impressum: {
+      tr: "Künye",
+      de: "Impressum",
+      en: "Imprint",
+    },
+    privacy: {
+      tr: "Gizlilik Politikası",
+      de: "Datenschutzerklärung",
+      en: "Privacy Policy",
     },
     contact: { tr: "İletişim", de: "Kontakt", en: "Contact" },
     rights: {
