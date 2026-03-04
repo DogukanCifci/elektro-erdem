@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import {
   X,
   ChevronLeft,
@@ -55,18 +55,11 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
         {/* Media Section (Left/Top) */}
         <div className="lg:w-3/5 bg-slate-900 relative flex flex-col h-[40vh] lg:h-auto group">
           <div className="flex-1 relative overflow-hidden bg-black">
-            <AnimatePresence mode="wait">
-              <motion.img
-                key={galleryIndex}
-                initial={{ opacity: 0, scale: 1.1, filter: "blur(10px)" }}
-                animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
-                exit={{ opacity: 0, scale: 1.05, filter: "blur(5px)" }}
-                transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-                src={project.gallery[galleryIndex]}
-                alt={project.title[lang]}
-                className="w-full h-full object-cover"
-              />
-            </AnimatePresence>
+            <img
+              src={project.gallery[galleryIndex]}
+              alt={project.title[lang]}
+              className="w-full h-full object-cover"
+            />
 
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none" />
 
