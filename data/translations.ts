@@ -63,6 +63,8 @@ interface Translations {
         submit: LocalizedString;
         sending: LocalizedString;
         success: LocalizedString;
+        privacyLine1: LocalizedString;
+        privacyLine2: LocalizedString;
         options: {
           offer: LocalizedString;
           fault: LocalizedString;
@@ -341,6 +343,16 @@ export const t: any = {
         tr: "Başarıyla Gönderildi!",
         de: "Erfolgreich gesendet!",
         en: "Sent Successfully!",
+      },
+      privacyLine1: {
+        tr: "Gizlilik politikasını okudum ve bilgilendirildim.",
+        de: "Ich habe die Datenschutzerklärung zur Kenntnis genommen.",
+        en: "I have read and acknowledged the privacy policy.",
+      },
+      privacyLine2: {
+        tr: "Bilgilerimin iletişim amacıyla saklanmasını kabul ediyorum.",
+        de: "Ich stimme zu, dass meine Angaben zur Kontaktaufnahme gespeichert werden.",
+        en: "I agree that my details may be stored for contact purposes.",
       },
       options: {
         offer: {
