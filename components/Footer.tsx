@@ -38,7 +38,7 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
                 className="rounded-2xl"
               />
               <span className="text-2xl font-bold text-white tracking-wide">
-                Elektro<span className="text-blue-500">Erdem</span>
+                Elektro Erdem
               </span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed">
@@ -82,7 +82,7 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
                         t.footer.contact[lang]}
                     </a>
                   </li>
-                )
+                ),
               )}
             </ul>
           </div>

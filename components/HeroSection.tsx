@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Zap, ArrowRight, CheckCircle } from "lucide-react";
-import HeroScene from "./HeroScene";
 import { Language } from "../types";
 import { t } from "../data/translations";
 
@@ -17,8 +16,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-50"
     >
-      <HeroScene />
-
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center pointer-events-none">
         <motion.div
           initial={{ opacity: 0, x: isRTL ? 50 : -50 }}
@@ -26,14 +23,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
           transition={{ duration: 0.8 }}
           className="mt-[1rem] md:mt-0 md:w-3/5 space-y-6 text-center md:text-start pt-20 pointer-events-auto"
         >
-          {/* Badge */}
-          <div className="inline-block px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 font-bold text-sm mb-2 backdrop-blur-md shadow-sm">
-            <span className="flex items-center gap-2 uppercase tracking-wide">
-              <Zap size={16} />
-              {t.hero.badge[lang]}
-            </span>
-          </div>
-
           {/* Title */}
           <h1 className="text-5xl md:text-7xl font-bold leading-tight text-slate-900 drop-shadow-sm">
             {t.hero.title[lang]} <br />

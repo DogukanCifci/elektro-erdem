@@ -101,7 +101,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, setLang }) => {
               isScrolled ? "text-slate-900" : "text-slate-900"
             }`}
           >
-            Elektro<span className="text-blue-600">Erdem</span>
+            Elektro Erdem
           </span>
         </a>
 
