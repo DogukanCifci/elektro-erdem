@@ -1,12 +1,11 @@
 import { LucideIcon } from "lucide-react";
 
-export type Language = "tr" | "de" | "en" | "ar";
+export type Language = "tr" | "de" | "en";
 
 export interface LocalizedString {
   tr: string;
   de: string;
   en: string;
-  ar: string;
 }
 
 export interface ServiceItem {

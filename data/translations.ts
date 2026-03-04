@@ -63,6 +63,8 @@ interface Translations {
         submit: LocalizedString;
         sending: LocalizedString;
         success: LocalizedString;
+        privacyLine1: LocalizedString;
+        privacyLine2: LocalizedString;
         options: {
           offer: LocalizedString;
           fault: LocalizedString;
@@ -83,6 +85,9 @@ interface Translations {
       aboutDesc: LocalizedString;
       services: LocalizedString;
       links: LocalizedString;
+      legal: LocalizedString;
+      impressum: LocalizedString;
+      privacy: LocalizedString;
       contact: LocalizedString;
       rights: LocalizedString;
     };
@@ -95,110 +100,92 @@ export const t: any = {
       tr: "Usta Elektrikçi & Mühendislik",
       de: "Wilkommen bei Elektro Erdem",
       en: "Welcome to Elektro Erdem",
-      ar: "كهربائي رئيسي وهندسة",
     },
     title: {
       tr: "Profesyonel",
       de: "Ihr Meisterbetrieb für",
       en: "Professional",
-      ar: "حلول",
     },
     titleHighlight: {
       tr: "Elektrik Hizmetleri",
       de: "Elektrotechnik",
       en: "Electrical Services",
-      ar: "كهربائية",
     },
     titleEnd: {
       tr: "Stuttgart'ta",
       de: "in Stuttgart",
       en: "in Stuttgart",
-      ar: "احترافية في شتوتغارت",
     },
     desc: {
       tr: "Bireysel ve kurumsal projeleriniz için sertifikalı elektrik tesisatı, akıllı ev sistemleri ve arıza bakım hizmetleri.",
       de: "Für Privatkunden, Gewerbe und Industrie bieten wir maßgeschneiderte Lösungen rund um E-Mobilität, moderne Elektroinstallationen, Smart-Home-Systeme und Elektrokontrollen. Elektro Erdem steht für Qualität, Präzision und Vertrauen.",
       en: "For private customers, commercial businesses, and industry, we provide tailor-made solutions in the areas of e-mobility, modern electrical installations, smart home systems, and electrical inspections. Elektro Erdem stands for quality, precision, and trust.",
-      ar: "تركيبات كهربائية معتمدة، أنظمة المنازل الذكية، وخدمات الصيانة لمشاريعك السكنية والتجارية.",
     },
     ctaProject: {
       tr: "Projelerimiz",
       de: "Unsere Projekte",
       en: "Our Projects",
-      ar: "مشاريعنا",
     },
     ctaOffer: {
       tr: "Hemen Teklif Al",
       de: "Angebot anfordern",
       en: "Get a Quote",
-      ar: "اطلب عرض سعر",
     },
     features: {
       one: {
         tr: "Elektrik Tesisatı",
         de: "Elektroinstallation",
         en: "Electrical Installation",
-        ar: "التركيبات الكهربائية",
       },
       two: {
         tr: "Akıllı Ev (KNX)",
         de: "Smart Home (KNX)",
         en: "Smart Home (KNX)",
-        ar: "المنزل الذكي (KNX)",
       },
       three: {
         tr: "7/24 Acil Servis",
         de: "24/7 Notdienst",
         en: "24/7 Emergency Service",
-        ar: "خدمة طوارئ 24/7",
       },
       four: {
         tr: "Endüstriyel Çözümler",
         de: "Industrielösungen",
         en: "Industrial Solutions",
-        ar: "حلول صناعية",
       },
       five: {
         tr: "Elektrik Tesisatları",
         de: "Elektroinstallationen",
         en: "Electrical Installations",
-        ar: "التركيبات الكهربائية",
       },
       six: {
         tr: "Servis / Müşteri Hizmeti",
         de: "Service/Kundendienst",
         en: "Service / Customer Support",
-        ar: "خدمة العملاء",
       },
       seven: {
         tr: "Akıllı Ev",
         de: "Smart Home",
         en: "Smart Home",
-        ar: "المنزل الذكي",
       },
       eight: {
         tr: "E-Mobilite",
         de: "E-Mobilität",
         en: "E-Mobility",
-        ar: "التنقل الكهربائي",
       },
       nine: {
         tr: "Planlama ve Danışmanlık",
         de: "Planung und Beratung",
         en: "Planning and Consulting",
-        ar: "التخطيط والاستشارات",
       },
       ten: {
         tr: "Tesisat Kontrolü",
         de: "Installationskontrolle",
         en: "Installation Inspection",
-        ar: "فحص التركيبات",
       },
       eleven: {
         tr: "Fotovoltaik",
         de: "Photovoltaik",
         en: "Photovoltaics",
-        ar: "الطاقة الضوئية",
       },
     },
   },
@@ -207,25 +194,21 @@ export const t: any = {
       tr: "Garantili İşçilik",
       de: "Meistergarantie",
       en: "Warranty",
-      ar: "ضمان الجودة",
     },
     service: {
       tr: "Hızlı Servis",
       de: "Schneller Service",
       en: "Fast Service",
-      ar: "خدمة سريعة",
     },
     projects: {
       tr: "Tamamlanan Proje",
       de: "Abgeschlossene Projekte",
       en: "Projects Done",
-      ar: "مشروع مكتمل",
     },
     clients: {
       tr: "Mutlu Müşteri",
       de: "Zufriedene Kunden",
       en: "Happy Clients",
-      ar: "عميل سعيد",
     },
   },
   services: {
@@ -233,13 +216,11 @@ export const t: any = {
       tr: "Hizmetlerimiz",
       de: "Unsere Leistungen",
       en: "Our Services",
-      ar: "خدماتنا",
     },
     title: {
       tr: "Elektrik İhtiyaçlarınız İçin Profesyonel Çözümler",
       de: "Professionelle Lösungen für Ihren Strombedarf",
       en: "Professional Solutions for Your Electrical Needs",
-      ar: "حلول احترافية لاحتياجاتك الكهربائية",
     },
   },
   projects: {
@@ -247,42 +228,36 @@ export const t: any = {
       tr: "Referanslarımız",
       de: "Referenzen",
       en: "References",
-      ar: "المراجع",
     },
     title: {
       tr: "Tamamlanan Projeler",
       de: "Abgeschlossene Projekte",
       en: "Completed Projects",
-      ar: "المشاريع المنجزة",
     },
     desc: {
       tr: "Detayları incelemek ve teknik şemaları görüntülemek için projelere tıklayın.",
       de: "Klicken Sie auf die Projekte, um Details zu sehen und technische Pläne anzuzeigen.",
       en: "Click on projects to view details and technical schematics.",
-      ar: "اضغط على المشاريع لعرض التفاصيل والمخططات الفنية.",
     },
-    filterAll: { tr: "Tümü", de: "Alle", en: "All", ar: "الكل" },
-    filterRes: { tr: "Konut", de: "Wohnbau", en: "Residential", ar: "سكني" },
-    filterCom: { tr: "Ticari", de: "Gewerbe", en: "Commercial", ar: "تجاري" },
+    filterAll: { tr: "Tümü", de: "Alle", en: "All" },
+    filterRes: { tr: "Konut", de: "Wohnbau", en: "Residential" },
+    filterCom: { tr: "Ticari", de: "Gewerbe", en: "Commercial" },
     filterInd: {
       tr: "Endüstri",
       de: "Installation",
       en: "Installation",
-      ar: "صناعي",
     },
     filterAuto: {
       tr: "Otomasyon",
       de: "Automation",
       en: "Automation",
-      ar: "أتمتة",
     },
-    sortNew: { tr: "En Yeni", de: "Neueste", en: "Newest", ar: "الأحدث" },
-    sortOld: { tr: "En Eski", de: "Älteste", en: "Oldest", ar: "الأقدم" },
+    sortNew: { tr: "En Yeni", de: "Neueste", en: "Newest" },
+    sortOld: { tr: "En Eski", de: "Älteste", en: "Oldest" },
     loadMore: {
       tr: "Daha Fazla Proje",
       de: "Mehr Projekte",
       en: "Load More",
-      ar: "تحميل المزيد",
     },
   },
   testimonials: {
@@ -290,147 +265,135 @@ export const t: any = {
       tr: "Müşteri Yorumları",
       de: "Kundenbewertungen",
       en: "Testimonials",
-      ar: "آراء العملاء",
     },
     title: {
       tr: "Güvenilir Çözüm Ortağınız",
       de: "Ihr zuverlässiger Partner",
       en: "Your Reliable Partner",
-      ar: "شريكك الموثوق",
     },
   },
   contact: {
-    subtitle: { tr: "İletişim", de: "Kontakt", en: "Contact", ar: "اتصل بنا" },
+    subtitle: { tr: "İletişim", de: "Kontakt", en: "Contact" },
     title: {
       tr: "Projenizi Başlatalım",
       de: "Starten wir Ihr Projekt",
       en: "Let's Start Your Project",
-      ar: "لنبدأ مشروعك",
     },
     desc: {
       tr: "Elektrik tesisatı, aydınlatma veya proje danışmanlığı için bize ulaşın.",
       de: "Kontaktieren Sie uns für Elektroinstallationen, Beleuchtung oder Projektberatung.",
       en: "Contact us for electrical installation, lighting, or project consulting.",
-      ar: "اتصل بنا للتركيبات الكهربائية، الإضاءة، أو استشارات المشاريع.",
     },
     addressTitle: {
       tr: "Ofis Adresi",
       de: "Büroadresse",
       en: "Office Address",
-      ar: "عنوان المكتب",
     },
     address: {
       tr: "Brigachstr. 14, 70376 Stuttgart",
       de: "Brigachstr. 14, 70376 Stuttgart",
       en: "Brigachstr. 14, 70376 Stuttgart",
-      ar: "Brigachstr. 14, 70376 شتوتغارت",
     },
     phoneTitle: {
       tr: "Telefon & WhatsApp",
       de: "Telefon & WhatsApp",
       en: "Phone & WhatsApp",
-      ar: "الهاتف والواتساب",
     },
     phoneDesc: {
       tr: "7/24 Acil Destek Hattı",
       de: "24/7 Notfall-Hotline",
       en: "24/7 Emergency Hotline",
-      ar: "خط الطوارئ 24/7",
     },
     emailTitle: {
       tr: "E-posta",
       de: "E-Mail",
       en: "Email",
-      ar: "البريد الإلكتروني",
     },
     form: {
       title: {
         tr: "İletişim Formu",
         de: "Kontaktformular",
         en: "Contact Form",
-        ar: "نموذج الاتصال",
       },
       name: {
         tr: "Adınız Soyadınız",
         de: "Ihr Name",
         en: "Full Name",
-        ar: "الاسم الكامل",
       },
-      phone: { tr: "Telefon", de: "Telefon", en: "Phone", ar: "الهاتف" },
+      phone: { tr: "Telefon", de: "Telefon", en: "Phone" },
       email: {
         tr: "E-posta",
         de: "E-Mail",
         en: "Email",
-        ar: "البريد الإلكتروني",
       },
-      subject: { tr: "Konu", de: "Betreff", en: "Subject", ar: "الموضوع" },
+      subject: { tr: "Konu", de: "Betreff", en: "Subject" },
       message: {
         tr: "Mesajınız",
         de: "Ihre Nachricht",
         en: "Your Message",
-        ar: "رسالتك",
       },
       submit: {
         tr: "Mesajı Gönder",
         de: "Nachricht senden",
         en: "Send Message",
-        ar: "إرسال الرسالة",
       },
       sending: {
         tr: "Gönderiliyor...",
         de: "Senden...",
         en: "Sending...",
-        ar: "جاري الإرسال...",
       },
       success: {
         tr: "Başarıyla Gönderildi!",
         de: "Erfolgreich gesendet!",
         en: "Sent Successfully!",
-        ar: "تم الإرسال بنجاح!",
+      },
+      privacyLine1: {
+        tr: "Gizlilik politikasını okudum ve bilgilendirildim.",
+        de: "Ich habe die Datenschutzerklärung zur Kenntnis genommen.",
+        en: "I have read and acknowledged the privacy policy.",
+      },
+      privacyLine2: {
+        tr: "Bilgilerimin iletişim amacıyla saklanmasını kabul ediyorum.",
+        de: "Ich stimme zu, dass meine Angaben zur Kontaktaufnahme gespeichert werden.",
+        en: "I agree that my details may be stored for contact purposes.",
       },
       options: {
         offer: {
           tr: "Teklif Almak İstiyorum",
           de: "Ich möchte ein Angebot",
           en: "I want a quote",
-          ar: "أريد عرض سعر",
         },
         fault: {
           tr: "Arıza Bildirimi",
           de: "Störungsmeldung",
           en: "Report a fault",
-          ar: "الإبلاغ عن عطل",
         },
         consult: {
           tr: "Danışmanlık",
           de: "Beratung",
           en: "Consultation",
-          ar: "استشارة",
         },
-        other: { tr: "Diğer", de: "Sonstiges", en: "Other", ar: "أخرى" },
+        other: { tr: "Diğer", de: "Sonstiges", en: "Other" },
       },
     },
   },
   modal: {
-    gallery: { tr: "Galeri", de: "Galerie", en: "Gallery", ar: "المعرض" },
+    gallery: { tr: "Galeri", de: "Galerie", en: "Gallery" },
     date: {
       tr: "Teslim Tarihi",
       de: "Fertigstellung",
       en: "Completion Date",
-      ar: "تاريخ الإنجاز",
     },
-    location: { tr: "Konum", de: "Standort", en: "Location", ar: "الموقع" },
+    location: { tr: "Konum", de: "Standort", en: "Location" },
     specs: {
       tr: "Teknik Özellikler & Bileşenler",
       de: "Technische Daten & Komponenten",
       en: "Tech Specs & Components",
-      ar: "المواصفات الفنية والمكونات",
     },
     tech: {
       tr: "Kullanılan Teknolojiler",
       de: "Verwendete Technologien",
       en: "Technologies Used",
-      ar: "التقنيات المستخدمة",
     },
   },
   footer: {
@@ -438,32 +401,42 @@ export const t: any = {
       tr: "Hakkımızda",
       de: "Über uns",
       en: "About Us",
-      ar: "معلومات عنا",
     },
     aboutDesc: {
       tr: "Stuttgart bölgesinde 10+ yıldır güvenilir elektrik hizmetleri sunan, uzman kadrosuyla müşteri memnuniyetini ön planda tutan lider elektrik firması.",
       de: "Ein führendes Elektrounternehmen in der Region Stuttgart, das für zuverlässige Dienstleistungen steht und Kundenzufriedenheit durch qualifiziertes Fachpersonal in den Mittelpunkt stellt.",
       en: "A leading electrical company in the Stuttgart region, delivering reliable services with a strong focus on customer satisfaction and skilled professionals.",
-      ar: "شركة كهرباء رائدة تقدم خدمات موثوقة في منطقة شتوتغارت لأكثر من 10 سنوات، مع إعطاء الأولوية لرضا العملاء بفضل فريق من الخبراء.",
     },
     services: {
       tr: "Hizmetler",
       de: "Leistungen",
       en: "Services",
-      ar: "الخدمات",
     },
     links: {
       tr: "Hızlı Bağlantılar",
       de: "Quick Links",
       en: "Quick Links",
-      ar: "روابط سريعة",
     },
-    contact: { tr: "İletişim", de: "Kontakt", en: "Contact", ar: "اتصل بنا" },
+    legal: {
+      tr: "Yasal",
+      de: "Rechtliches",
+      en: "Legal",
+    },
+    impressum: {
+      tr: "Künye",
+      de: "Impressum",
+      en: "Imprint",
+    },
+    privacy: {
+      tr: "Gizlilik Politikası",
+      de: "Datenschutzerklärung",
+      en: "Privacy Policy",
+    },
+    contact: { tr: "İletişim", de: "Kontakt", en: "Contact" },
     rights: {
       tr: "Tüm hakları saklıdır.",
       de: "Alle Rechte vorbehalten.",
       en: "All rights reserved.",
-      ar: "جميع الحقوق محفوظة.",
     },
   },
 };

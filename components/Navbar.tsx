@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Zap, Menu, X, Phone, Globe } from "lucide-react";
+import { Menu, X, Phone, Globe } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Language } from "../types";
 
@@ -46,14 +46,6 @@ const Navbar: React.FC<NavbarProps> = ({ lang, setLang }) => {
       contact: "Contact",
       call: "Call Now",
     },
-    ar: {
-      home: "الرئيسية",
-      services: "الخدمات",
-      projects: "المشاريع",
-      testimonials: "المراجع",
-      contact: "اتصل بنا",
-      call: "اتصل الآن",
-    },
   };
 
   const navLinks = [
@@ -67,8 +59,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, setLang }) => {
   const languages: { code: Language; label: string }[] = [
     { code: "de", label: "Deutsch" },
     { code: "en", label: "English" },
-    // { code: "tr", label: "Türkçe" },
-    // { code: 'ar', label: 'العربية' },
+    { code: "tr", label: "Türkçe" },
   ];
 
   return (
@@ -79,7 +70,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, setLang }) => {
           : "bg-transparent py-5"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         {/* Logo */}
         <a
           href="#home"
@@ -101,7 +92,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, setLang }) => {
               isScrolled ? "text-slate-900" : "text-slate-900"
             }`}
           >
-            Elektro<span className="text-blue-600">Erdem</span>
+            Elektro Erdem
           </span>
         </a>
 
@@ -154,18 +145,22 @@ const Navbar: React.FC<NavbarProps> = ({ lang, setLang }) => {
           </div>
 
           <a
-            href="#contact"
-            className="flex items-center space-x-2 rtl:space-x-reverse bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full font-bold transition-transform hover:scale-105 shadow-lg shadow-blue-500/20"
+            href="tel:+4917621025291"
+            className="flex items-center space-x-2 rtl:space-x-reverse bg-slate-900 hover:bg-slate-800 text-white px-4 py-2 rounded-full font-bold transition-transform hover:scale-105 shadow-lg shadow-slate-900/20"
           >
             <Phone size={16} />
-            <span dir="ltr">+49 176 210 25291</span>
+            <span dir="ltr">+49 176 210 252 91</span>
           </a>
         </div>
 
         {/* Mobile Menu Button */}
         <div className="flex items-center space-x-4 md:hidden rtl:space-x-reverse">
           <button
-            onClick={() => setLang(lang === "en" ? "de" : "en")}
+            onClick={() =>
+              setLang(
+                lang === "de" ? "en" : lang === "en" ? "tr" : "de"
+              )
+            }
             className="border rounded-md px-2 py-1 text-slate-800 border-slate-300"
           >
             <span className="text-xs font-bold uppercase">{lang}</span>

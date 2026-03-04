@@ -10,8 +10,9 @@ interface ContactSectionProps {
 
 const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
   const [formStatus, setFormStatus] = useState<"idle" | "sending" | "success">(
-    "idle"
+    "idle",
   );
+  const [privacyAccepted, setPrivacyAccepted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -39,6 +40,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
     if (result.success) {
       setFormStatus("success");
       e.target.reset();
+      setPrivacyAccepted(false);
     } else {
       setFormStatus("idle");
       console.error(result);
@@ -93,7 +95,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
                     href="tel:+4917621025291"
                     className="text-slate-700 text-lg font-mono mt-1"
                   >
-                    +49 176 210 25291
+                    +49 176 210 252 91
                   </a>
                   <p className="text-slate-500 text-sm">
                     {t.contact.phoneDesc[lang]}
@@ -127,7 +129,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.8773150509423!2d9.217161694869322!3d48.822402229314214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799c542969635c3%3A0xfd67c13d48956868!2sBrigachstra%C3%9Fe%2014%2C%2070376%20Stuttgart!5e0!3m2!1str!2sde!4v1765566974316!5m2!1str!2sde"
                 width="100%"
                 height="100%"
-                style={{ border: 0, filter: "grayscale(100%)" }}
+                style={{ border: 0 }}
                 loading="lazy"
               ></iframe>
             </div>
@@ -290,13 +292,39 @@ const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
                 ></textarea>
               </div>
 
+              <label className="flex items-start gap-3 text-sm text-slate-600">
+                <input
+                  type="checkbox"
+                  name="privacy_consent"
+                  checked={privacyAccepted}
+                  onChange={(e) => setPrivacyAccepted(e.target.checked)}
+                  className="mt-1 h-4 w-4 rounded border-slate-300 text-blue-600 focus:ring-blue-600"
+                />
+                <span>
+                  {t.contact.form.privacyLine1[lang]}{" "}
+                  {t.contact.form.privacyLine2[lang]}
+                  {" "}
+                  <button
+                    type="button"
+                    onClick={() =>
+                      window.dispatchEvent(
+                        new CustomEvent("open-legal", { detail: "privacy" }),
+                      )
+                    }
+                    className="text-blue-700 underline hover:text-blue-800"
+                  >
+                    {t.footer.privacy[lang]}
+                  </button>
+                </span>
+              </label>
+
               <button
                 type="submit"
-                disabled={formStatus !== "idle"}
+                disabled={formStatus !== "idle" || !privacyAccepted}
                 className={`w-full py-4 rounded-xl font-bold text-lg transition-all transform active:scale-95 shadow-lg ${
                   formStatus === "success"
                     ? "bg-green-600 text-white shadow-green-900/20"
-                    : "bg-blue-600 hover:bg-blue-700 text-white shadow-blue-900/20"
+                    : "bg-blue-600 hover:bg-blue-700 disabled:bg-slate-300 disabled:text-slate-500 disabled:shadow-none text-white shadow-blue-900/20"
                 }`}
               >
                 {formStatus === "idle" && t.contact.form.submit[lang]}
