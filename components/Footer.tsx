@@ -224,9 +224,9 @@ const Footer: React.FC<FooterProps> = ({ lang, onOpenProject }) => {
                   <br />
                   E-Mail: info@elektroerdem.de
                 </p>
-                <p>
+                {/* <p>
                   Umsatzsteuer-ID gemäß §27a Umsatzsteuergesetz: DE [USt-ID]
-                </p>
+                </p> */}
                 <p>
                   Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
                   <br />
@@ -239,7 +239,7 @@ const Footer: React.FC<FooterProps> = ({ lang, onOpenProject }) => {
                   <br />
                   Verliehen in: Deutschland
                 </p>
-                <p>Zuständige Handwerkskammer: [Name der Handwerkskammer]</p>
+                {/* <p>Zuständige Handwerkskammer: [Name der Handwerkskammer]</p> */}
                 <p>
                   Berufsrechtliche Regelungen: Handwerksordnung (HwO)
                   <br />
@@ -334,16 +334,6 @@ const Footer: React.FC<FooterProps> = ({ lang, onOpenProject }) => {
                 <p>
                   Diese Daten geben wir nicht ohne Ihre Einwilligung weiter. Die
                   Verarbeitung erfolgt gemäß Art. 6 Abs. 1 lit. b DSGVO.
-                </p>
-                <p className="font-semibold">Cookies</p>
-                <p>
-                  Unsere Website verwendet sogenannte Cookies. Cookies richten
-                  auf Ihrem Endgerät keinen Schaden an und enthalten keine
-                  Viren. Cookies dienen dazu, unser Angebot nutzerfreundlicher,
-                  effektiver und sicherer zu machen. Sie können Ihren Browser so
-                  einstellen, dass Sie über das Setzen von Cookies informiert
-                  werden und Cookies nur im Einzelfall erlauben oder generell
-                  ausschließen.
                 </p>
                 <p className="font-semibold">SSL- bzw. TLS-Verschlüsselung</p>
                 <p>
