@@ -79,7 +79,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, setLang }) => {
           : "bg-transparent py-5"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         {/* Logo */}
         <a
           href="#home"
@@ -158,7 +158,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, setLang }) => {
             className="flex items-center space-x-2 rtl:space-x-reverse bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full font-bold transition-transform hover:scale-105 shadow-lg shadow-blue-500/20"
           >
             <Phone size={16} />
-            <span dir="ltr">+49 176 210 25291</span>
+            <span dir="ltr">+49 176 210 252 91</span>
           </a>
         </div>
 
