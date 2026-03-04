@@ -145,8 +145,8 @@ const Navbar: React.FC<NavbarProps> = ({ lang, setLang }) => {
           </div>
 
           <a
-            href="#contact"
-            className="flex items-center space-x-2 rtl:space-x-reverse bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full font-bold transition-transform hover:scale-105 shadow-lg shadow-blue-500/20"
+            href="tel:+4917621025291"
+            className="flex items-center space-x-2 rtl:space-x-reverse bg-slate-900 hover:bg-slate-800 text-white px-4 py-2 rounded-full font-bold transition-transform hover:scale-105 shadow-lg shadow-slate-900/20"
           >
             <Phone size={16} />
             <span dir="ltr">+49 176 210 252 91</span>

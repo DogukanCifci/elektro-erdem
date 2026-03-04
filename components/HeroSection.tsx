@@ -24,9 +24,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
           {/* Title */}
           <h1 className="text-5xl md:text-7xl font-bold leading-tight text-slate-900 drop-shadow-sm">
             {t.hero.title[lang]} <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-blue-500 to-sky-500 animate-pulse-slow">
-              {t.hero.titleHighlight[lang]}
-            </span>
+            <span>{t.hero.titleHighlight[lang]}</span>
             <br />
             {t.hero.titleEnd[lang]}
           </h1>
@@ -67,8 +65,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
               href="#projects"
               className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-all transform hover:scale-105 shadow-xl shadow-blue-500/20 flex items-center justify-center"
             >
-              {t.hero.ctaProject[lang]}{" "}
-              <ArrowRight className="ml-2 w-5 h-5" />
+              {t.hero.ctaProject[lang]} <ArrowRight className="ml-2 w-5 h-5" />
             </a>
             <a
               href="#contact"
