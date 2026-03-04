@@ -127,7 +127,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.8773150509423!2d9.217161694869322!3d48.822402229314214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799c542969635c3%3A0xfd67c13d48956868!2sBrigachstra%C3%9Fe%2014%2C%2070376%20Stuttgart!5e0!3m2!1str!2sde!4v1765566974316!5m2!1str!2sde"
                 width="100%"
                 height="100%"
-                style={{ border: 0, filter: "grayscale(100%)" }}
+                style={{ border: 0 }}
                 loading="lazy"
               ></iframe>
             </div>
