@@ -76,14 +76,9 @@ const Navbar: React.FC<NavbarProps> = ({ lang, setLang }) => {
           href="#home"
           className="flex items-center space-x-2 group rtl:space-x-reverse"
         >
-          {/* <img
-            src="https://github.com/user-attachments/assets/4e443d0c-c560-4a15-92bc-35319edf4c0e"
-            alt="logo"
-            width={80}
-            className="rounded-[1.75rem]"
-          /> */}
           <img
-            src="https://github.com/user-attachments/assets/d2d46cd1-e86e-41f6-bd46-f3fb7e994048"
+            src="/assets/logo2.jpeg"
+            alt="Elektro Erdem logo"
             width={80}
             className="rounded-2xl"
           />

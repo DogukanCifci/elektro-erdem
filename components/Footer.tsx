@@ -27,14 +27,20 @@ const Footer: React.FC<FooterProps> = ({ lang, onOpenProject }) => {
   useEffect(() => {
     const handleOpenLegal = (event: Event) => {
       const customEvent = event as CustomEvent<"impressum" | "privacy">;
-      if (customEvent.detail === "impressum" || customEvent.detail === "privacy") {
+      if (
+        customEvent.detail === "impressum" ||
+        customEvent.detail === "privacy"
+      ) {
         setActiveLegal(customEvent.detail);
       }
     };
 
     window.addEventListener("open-legal", handleOpenLegal as EventListener);
     return () =>
-      window.removeEventListener("open-legal", handleOpenLegal as EventListener);
+      window.removeEventListener(
+        "open-legal",
+        handleOpenLegal as EventListener,
+      );
   }, []);
 
   return (
@@ -49,10 +55,10 @@ const Footer: React.FC<FooterProps> = ({ lang, onOpenProject }) => {
             <div className="space-y-6">
               <div className="flex items-center space-x-2 rtl:space-x-reverse">
                 <img
-                  src="https://github.com/user-attachments/assets/d2d46cd1-e86e-41f6-bd46-f3fb7e994048"
-                  alt=""
-                  width={80}
-                  className="rounded-2xl"
+                  src="/assets/logo2.jpeg"
+                  alt="Elektro Erdem logo"
+                  width={50}
+                  className="rounded-xl"
                 />
                 <span className="text-2xl font-bold text-white tracking-wide">
                   Elektro Erdem
